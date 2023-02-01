@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Weather Dashboard</title>
@@ -15,20 +16,20 @@
     <section>
     <nav>
         <form>
-            <div id="user-input">
-                <label for="entername">Search for a City:</label>
-                <input type="text" id="user-name" required>
-                <input type="submit" id="submit-name" class= "bttn" value="Submit">
+            <div class="search-conatiner">
+                <label for="search">Search for a City:</label>
+                <input type="text" id="user-input" required>
+                <button type="submit" id="submit-bttn" class= "bttn">Search</button>
             </div>
-        </form>
+        </form> 
     </nav>
   
     <article>
-        <h1>Fill in city name here</h1>
+        <h1 id="city-name">Fill in city name here</h1>
             <ul>
-                <li>Temp:</li>
-                <li>Wind:</li>
-                <li>Humidity:</li>
+                <li id="temp">Temp:</li>
+                <li id="wind">Wind:</li>
+                <li id="humidity">Humidity:</li>
             </ul>
     </article>
     </section>
