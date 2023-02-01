@@ -48,6 +48,16 @@
     font-family: "Segoe UI", sans-serif;
     font-weight:700;
   }
+
+  #current-temp {
+    font-size: 100px;
+  }
+  #city-name {
+    font-size: 70px;
+  }
+  #current-humidity, #current-wind {
+    font-size: 30px;
+  }
   /*--------------------------------------------------------------
   # Weather Card
   --------------------------------------------------------------*/

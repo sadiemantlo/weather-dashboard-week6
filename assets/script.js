@@ -18,15 +18,32 @@ var humidityEl4= document.getElementById('humidity-4');
 var tempEl5= document.getElementById('temp-5');
 var windEl5= document.getElementById('wind-5');
 var humidityEl5= document.getElementById('humidity-5');
+var currTempEl = document.getElementById('current-temp');
+var currWindEl = document.getElementById('current-wind');
+var currHumidityEl = document.getElementById('current-humidity');
 
-
+submitBttn.addEventListener('click', function (e) {
+    e.preventDefault();
+    var userInput = document.getElementById('user-input');
+    var requestApi = 'https://api.openweathermap.org/data/2.5/weather?q=' + userInput.value + '&appid=cdc2bb6dd9fd528f49af3aaf693512e8&units=imperial';
+    fetch(requestApi)
+        .then(response => response.json())
+        .then(data => { console.log(data);
+            var currTemp = data.main.temp;
+            var currWind = data.wind.speed;
+            var currHumidity = data.main.humidity;
+            currTempEl.innerText = currTemp + ' °F';
+            currHumidityEl.innerText = currHumidity + '%';
+            currWindEl.innerText = currWind + ' mph';
+        })
+})
 
 
 submitBttn.addEventListener('click', function (e) {
     e.preventDefault();
     var userInput = document.getElementById('user-input');
-    var requestApi = 'http://api.openweathermap.org/data/2.5/forecast?q=' + userInput.value + '&appid=cdc2bb6dd9fd528f49af3aaf693512e8&units=imperial&cnt=30';
-    fetch(requestApi)
+    var requestApi2 = 'http://api.openweathermap.org/data/2.5/forecast?q=' + userInput.value + '&appid=cdc2bb6dd9fd528f49af3aaf693512e8&units=imperial&cnt=30';
+    fetch(requestApi2)
         .then(response => response.json())
         .then(data => { console.log(data);
             // console.log(data.city.name)
