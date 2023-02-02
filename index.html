@@ -16,29 +16,26 @@
         <div class="weather__card">
             <div class="d-flex flex-row justify-content-center align-items-center">
                 <div class="p-3">
-                    <h2 id="current-temp">15&deg;</h2>
+                    <h2 id="current-temp"></h2>
                 </div>
                 <div class="p-3">
                     <img src="https://svgur.com/i/oKG.svg">
                 </div>
                 <div class="p-3">
-                    <h5>Tuesday, 10 AM</h5>
-                    <h3 id="city-name">San Francisco</h3>
-                    <span class="weather__description">Mostly Cloudy</span>
+                    <h5 id="current-day">Tuesday, 10 AM</h5>
+                    <h3 id="city-name"></h3>
+                    <span id="current-description" class="weather__description"></span>
                 </div>
             </div>
             <div class="weather__status d-flex flex-row justify-content-center align-items-center mt-3">
                 <div class="p-4 d-flex justify-content-center align-items-center">
                     <img src="https://svgur.com/i/oHw.svg">
-                    <span id="current-humidity">10%</span>
+                    <span id="current-humidity"></span>
                 </div>
                 <div class="p-4 d-flex justify-content-center align-items-center">
-                    <!-- <img src="https://svgur.com/i/oH_.svg">
-                    <span>0.53 mB</span>
-                </div> -->
                 <div class="p-4 d-flex justify-content-center align-items-center">
                     <img src="https://svgur.com/i/oKS.svg">
-                    <span id="current-wind">10 km/h</span>
+                    <span id="current-wind"></span>
                 </div>
             </div>
         </div>
@@ -48,63 +45,63 @@
 <!-- Weather Forecast -->
 <div class="cards weather__forecast d-flex flex-row justify-content-center align-items-center mt-3">
     <div class="five-day p-4 d-flex flex-column justify-content-center align-items-center">
-        <span id="date">Wed</span>
+        <span id="date">1</span>
         <ul class="ul">
             <li class="list" id="temp-1">Temp:</li>
             <li class="list" id="wind-1">Wind Speed:</li>
             <li class="list" id="humidity-1">Humidity:</li>
         </ul>
         <img src="https://svgur.com/i/oJe.svg">
-        <span>13&deg;</span>
+        <span id="description-1">13&deg;</span>
     </div>
 
     <div class="five-day p-4 d-flex flex-column justify-content-center align-items-center">
-        <span id="date">Thu</span>
+        <span id="date">2</span>
         <ul class="ul">
             <li class="list" id="temp-2">Temp:</li>
             <li class="list" id="wind-2">Wind Speed:</li>
             <li class="list" id="humidity-2">Humidity:</li>
         </ul>
         <img src="https://svgur.com/i/oKG.svg">
-        <span>15&deg;</span>
+        <span id="description-2">15&deg;</span>
     </div>
 
     <div class="five-day p-4 d-flex flex-column justify-content-center align-items-center">
-        <span id="date">Wed</span>
+        <span id="date">3</span>
         <ul class="ul">
             <li class="list" id="temp-3">Temp:</li>
             <li class="list" id="wind-3">Wind Speed:</li>
             <li class="list" id="humidity-3">Humidity:</li>
         </ul>
         <img src="https://svgur.com/i/oKG.svg">
-        <span>15&deg;</span>
+        <span id="description-3">15&deg;</span>
     </div>
 
     <div class="five-day p-4 d-flex flex-column justify-content-center align-items-center">
-        <span id="date">Fri</span>
+        <span id="date">4</span>
         <ul class="ul">
             <li class="list" id="temp-4">Temp:</li>
             <li class="list" id="wind-4">Wind Speed:</li>
             <li class="list" id="humidity-4">Humidity:</li>
         </ul>
         <img src="https://svgur.com/i/oJe.svg">
-        <span>13&deg;</span>
+        <span id="description-4">13&deg;</span>
     </div>
 
     <div class="five-day p-4 d-flex flex-column justify-content-center align-items-center">
-        <span id="date">Sat</span>
+        <span id="date">5</span>
         <ul class="ul">
             <li class="list" id="temp-5">Temp:</li>
             <li class="list" id="wind-5">Wind Speed:</li>
             <li class="list" id="humidity-5">Humidity:</li>
         </ul>
         <img src="https://svgur.com/i/oJx.svg">
-        <span>13&deg;</span>
+        <span id="description-5">13&deg;</span>
     </div>
 
     <nav>
         <form class="search-conatiner">
-            <div>
+            <div id="append">
                 <label for="search">Search for a City:</label>
                 <input type="text" id="user-input" required>
                 <button type="submit" id="submit-bttn" class= "bttn">Search</button>
@@ -112,7 +109,12 @@
         </form> 
     </nav>
 
-    
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="assets/script.js"></script>
 
 </body>
