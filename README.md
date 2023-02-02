@@ -10,6 +10,6 @@ N/A
 ## **Usage**
 
 To use this weather dashboard simply just type the name of the city you would like to know the weather for and click the search button.
->### To view the deployed site click [here]()
+>### To view the deployed site click [here](https://sadiemantlo.github.io/weather-dashboard-week6/)
 
-![Deployed site screenshot]()
+![Deployed site screenshot](images/deployed-site.png)

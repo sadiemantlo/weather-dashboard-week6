@@ -52,7 +52,7 @@ submitBttn.addEventListener('click', function (e) {
 submitBttn.addEventListener('click', function (e) {
     e.preventDefault();
     var userInput = document.getElementById('user-input');
-    var requestApi2 = 'http://api.openweathermap.org/data/2.5/forecast?q=' + userInput.value + '&appid=cdc2bb6dd9fd528f49af3aaf693512e8&units=imperial&cnt=30';
+    var requestApi2 = 'https://api.openweathermap.org/data/2.5/forecast?q=' + userInput.value + '&appid=cdc2bb6dd9fd528f49af3aaf693512e8&units=imperial&cnt=30';
     fetch(requestApi2)
         .then(response => response.json())
         .then(data => { console.log(data);
